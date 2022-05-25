@@ -1,0 +1,21 @@
+doctype html 
+html 
+
+    head 
+        title BLAME 
+        link(rel="stylesheet", href="/style.css")
+
+    body 
+
+        div(class="cabeca")
+            img(src="/logo.png", alt="logo")
+        
+        div(class="campo")
+
+            each resultado in resultados
+
+                div(class="postagem")
+                    div(class="postagem-nome") #{resultado.autor}
+                    div(class="postagem-descricao") #{resultado.descricao}
+                    div(class="postagem-conteudo")
+                        img(src=resultado.imagem, alt="conteudo")

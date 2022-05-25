@@ -1,0 +1,9 @@
+form(action="/postagem", method="post")  
+
+    h1 Postagem!
+
+    input(type="text", name="autor", maxlength="30", placeholder="Autor", required)
+    input(type="text", name="descricao", maxlength="100", placeholder="Descrição", required)
+    input(type="url", name="imagem", maxlength="100", placeholder="http://", required)
+
+    input(type="submit", value="Postar")
